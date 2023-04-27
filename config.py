@@ -10,7 +10,7 @@ import os
 from logging.handlers import RotatingFileHandler
 
 # Bot token dari @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5983344699:AAFVCBV9rHNkbDnQajL_t4EQBXnDlDzEO0E")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "2003648714:AAHa2K8sE_dNEhfF8pN2pAWrT2RE6w1Wz0g")
 
 # API ID Anda dari my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "7925156"))
@@ -19,13 +19,13 @@ APP_ID = int(os.environ.get("APP_ID", "7925156"))
 API_HASH = os.environ.get("API_HASH", "b9782f347899e33a538f1b0b037b01ad")
 
 # ID Channel Database
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001856759091"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001841310192"))
 
 # OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1385170049"))
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "relakumengalah")
+OWNER = os.environ.get("OWNER", "saganihdek")
 
 # Database
 DB_URI = os.environ.get("DATABASE_URL", "postgres://obtmfece:X1dCv9RhBmzGDijn1iyTinJXE_9nSkK-@mouse.db.elephantsql.com/obtmfece")
@@ -35,8 +35,8 @@ CHANNEL = os.environ.get("CHANNEL", "")
 GROUP = os.environ.get("GROUP", "")
 
 # ID dari Channel Atau Group Untuk Wajib Subscribenya
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001691981864"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001879358900"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001958003158"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001504558248"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -46,7 +46,7 @@ START_MSG = os.environ.get(
     "<b>Hello {first}</b>\n\n<b>Saya dapat menyimpan file pribadi di Channel Tertentu dan pengguna lain dapat mengaksesnya dari link khusus.</b>",
 )
 try:
-    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "5029255799 2013745499").split())]
+    ADMINS = [int(x) for x in (os.environ.get("ADMINS", "1385170049").split())]
 except ValueError:
     raise Exception("Daftar Admin Anda tidak berisi User ID Telegram yang valid.")
 
